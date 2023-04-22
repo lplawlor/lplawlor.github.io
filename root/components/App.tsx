@@ -1,17 +1,13 @@
-import React, { useState } from "react";
-import "../styles/App.css";
+import React from "react";
+import Tool from "./Tool";
+import pythonLogo from "../assets/python.svg";
+
+const LOREM = "Lorem ipsum dolor sit amet consectetur adipisicing elit.";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
-      <h1>Placeholder App</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-      </div>
+      <Tool icon={pythonLogo} title="Python" text={LOREM} />
     </>
   );
 }
