@@ -1,13 +1,13 @@
 import React from "react";
 import Tool from "./Tool";
-import pythonLogo from "../assets/python.svg";
+import pythonIcon from "@iconify/icons-devicon/python";
 
 const LOREM = "Lorem ipsum dolor sit amet consectetur adipisicing elit.";
 
 function App() {
   return (
     <>
-      <Tool icon={pythonLogo} title="Python" text={LOREM} />
+      <Tool icon={pythonIcon} title="Python" text={LOREM} />
     </>
   );
 }
