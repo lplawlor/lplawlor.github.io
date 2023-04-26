@@ -1,10 +1,16 @@
-import React from "react";
 import Card from "react-bootstrap/Card";
+import { IconifyIcon } from "@iconify/types";
 import { Icon } from "@iconify/react";
 
 const ICON_SIZE = 100;
 
-function Tool({ icon, title, text }) {
+type ToolProps = {
+  icon: IconifyIcon;
+  title: string;
+  text: string;
+};
+
+function Tool({ icon, title, text }: ToolProps) {
   return (
     <Card>
       <Card.Body>

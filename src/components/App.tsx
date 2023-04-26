@@ -1,4 +1,3 @@
-import React from "react";
 import LinkedInBadge from "./LinkedInBadge";
 import Div100vh from "react-div-100vh";
 import "../styles/App.css";
