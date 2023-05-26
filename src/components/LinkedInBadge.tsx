@@ -1,6 +1,8 @@
+import Image from "react-bootstrap/Image";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import linkedInIcon from "../assets/linkedin.svg";
+import profile_pic from "../assets/profile_pic.png";
 import "../styles/LinkedInBadge.css";
 
 function LinkedInBadge() {
@@ -14,13 +16,12 @@ function LinkedInBadge() {
           className="me-5"
         />
       </Card.Header>
-      <Card.Body>
+      <Card.Body className="text-center">
+        <Image src={profile_pic} width={100} roundedCircle className="mb-2" />
         <Card.Title>
           <b>Liam Lawlor</b>
         </Card.Title>
-        <Card.Text>
-          Computer Science Student at Memorial University of Newfoundland
-        </Card.Text>
+        <Card.Text>B.Sc. in Computer Science</Card.Text>
         <div className="d-flex justify-content-center">
           <Button
             variant="outline-info"

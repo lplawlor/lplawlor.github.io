@@ -5,7 +5,7 @@ import resume from "../files/LiamLawlorResume.pdf";
 
 function App() {
   return (
-    <Div100vh id="app">
+    <Div100vh id="app" className="mx-3">
       <div className="d-flex flex-column align-items-center my-auto">
         <h3 className="text-center">This site is under construction.</h3>
         <h3 className="text-center mb-3">
