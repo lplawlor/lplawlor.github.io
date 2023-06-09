@@ -1,12 +1,17 @@
-import Div100vh from "react-div-100vh";
+import ImageSection from "./ImageSection";
 
 function App() {
   return (
-    <Div100vh>
-      <h1 className="text-3xl font-light underline">
-        Hello world!
-      </h1>
-    </Div100vh>
+    <>
+      <ImageSection />
+      <div>This content is beneath the image section</div>
+      <div>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos
+        iure assumenda optio repellendus voluptatem, non delectus vitae
+        inventore fuga excepturi laborum dicta nulla neque distinctio
+        laudantium, praesentium adipisci quisquam fugiat?
+      </div>
+    </>
   );
 }
 
