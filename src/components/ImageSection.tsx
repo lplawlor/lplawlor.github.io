@@ -1,20 +1,29 @@
 import Div100vh from "react-div-100vh";
 import Header from "./Header";
 import TypedTitle from "./TypedTitle";
-import beach_mobile from "../assets/beach_mobile.png";
+import beach_sm from "../assets/beach_sm.png";
+import beach_md from "../assets/beach_md.png";
+import beach_lg from "../assets/beach_lg.png";
 
 function ImageSection() {
   return (
-    <Div100vh className="flex flex-col">
+    <Div100vh className="flex flex-col items-center md:items-start">
       <picture className="absolute -z-10">
-        <source media="(min-width:1536px)" srcSet="" /> {/* Extra-Extra Large (2xl) */}
-        <source media="(min-width:1024px)" srcSet="" /> {/* Extra Large (xl) */}
-        <source media="(min-width:768px)" srcSet="" /> {/* Large (lg) */}
-        <source media="(min-width:640px)" srcSet="" /> {/* Medium (md) */}
-        <img src={beach_mobile} alt="Alt Text" className="w-auto" /> {/* Small (sm) */}
+        <source media="(min-width:1536px)" srcSet="" /> {/* 2xl breakpoint */}
+        <source media="(min-width:1280px)" srcSet="" /> {/* xl breakpoint */}
+        <source media="(min-width:1024px)" srcSet={beach_lg} />{" "}
+        {/* lg breakpoint */}
+        <source media="(min-width:768px)" srcSet={beach_md} />{" "}
+        {/* md breakpoint */}
+        <source media="(min-width:640px)" srcSet="" /> {/* sm breakpoint */}
+        <img
+          src={beach_sm}
+          alt="Alt Text"
+          className="object-cover object-center md:object-top w-screen h-screen"
+        />
       </picture>
       <Header />
-      <TypedTitle className="flex flex-col drop-shadow-md flex-auto items-center text-center mt-14" />
+      <TypedTitle className="flex flex-col drop-shadow-md items-center md:ml-10 text-center mt-14 md:mt-72" />
     </Div100vh>
   );
 }

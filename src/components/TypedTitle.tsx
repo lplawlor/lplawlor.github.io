@@ -45,8 +45,12 @@ function TypedTitle({ className }: { className?: string }) {
 
   return (
     <div className={className}>
-      <span className="font-bold text-3xl mb-2 text-scarf-blue">{name}</span>
-      <span className="font-bold text-2xl text-zinc-100">{summary}</span>
+      <span className="font-bold text-3xl md:text-4xl mb-2 md:mb-8 text-scarf-blue">
+        {name}
+      </span>
+      <span className="font-bold text-2xl md:text-3xl text-zinc-100">
+        {summary}
+      </span>
     </div>
   );
 }
