@@ -1,5 +1,5 @@
 import { Typed } from "typed.ts";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 const typeOptions = {
   eraseDelay: { min: 75, max: 100 },
@@ -9,9 +9,18 @@ const typeOptions = {
   locale: "en",
 };
 
-function TypedTitle({ className, style}: { className?: string, style?: React.CSSProperties }) {
-  const [name, setName] = useState(" ");
-  const [summary, setSummary] = useState(" ");
+function TypedTitle({
+  height,
+  width,
+  lineGap,
+}: {
+  height: string;
+  width: string;
+  lineGap: string;
+}) {
+  // Zero-width spaces are used initially, as this keeps the height of the text consistent
+  const [name, setName] = useState("​");
+  const [summary, setSummary] = useState("​");
 
   useEffect(() => {
     const nameTyped = new Typed({
@@ -44,11 +53,17 @@ function TypedTitle({ className, style}: { className?: string, style?: React.CSS
   }, []);
 
   return (
-    <div className={className} style={style}>
-      <span className="font-bold text-3xl md:text-4xl mb-2 md:mb-12 text-scarf-blue">
+    <div
+      className="absolute flex flex-col drop-shadow-md items-center justify-center text-center"
+      style={{ height: height, width: width }}
+    >
+      <span className="font-bold text-3xl md:text-4xl lg:text-5xl 2xl:text-6xl text-scarf-blue">
         {name}
       </span>
-      <span className="font-bold text-2xl md:text-3xl text-zinc-100">
+      <span
+        className="font-bold text-2xl md:text-3xl lg:text-4xl 2xl:text-5xl text-zinc-100"
+        style={{ marginTop: lineGap }}
+      >
         {summary}
       </span>
     </div>
