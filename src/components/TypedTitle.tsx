@@ -1,5 +1,5 @@
 import { Typed } from "typed.ts";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const typeOptions = {
   eraseDelay: { min: 75, max: 100 },
@@ -9,7 +9,7 @@ const typeOptions = {
   locale: "en",
 };
 
-function TypedTitle({ className }: { className?: string }) {
+function TypedTitle({ className, style}: { className?: string, style?: React.CSSProperties }) {
   const [name, setName] = useState(" ");
   const [summary, setSummary] = useState(" ");
 
@@ -44,8 +44,8 @@ function TypedTitle({ className }: { className?: string }) {
   }, []);
 
   return (
-    <div className={className}>
-      <span className="font-bold text-3xl md:text-4xl mb-2 md:mb-8 text-scarf-blue">
+    <div className={className} style={style}>
+      <span className="font-bold text-3xl md:text-4xl mb-2 md:mb-12 text-scarf-blue">
         {name}
       </span>
       <span className="font-bold text-2xl md:text-3xl text-zinc-100">
