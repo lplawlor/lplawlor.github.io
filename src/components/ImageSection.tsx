@@ -4,6 +4,7 @@ import Div100vh from "react-div-100vh";
 
 import Header from "./Header";
 import TypedTitle from "./TypedTitle";
+import Footer from "./Footer";
 
 import beach_sm from "../assets/beach_sm.png";
 //const smW = 1712;
@@ -85,7 +86,7 @@ function ImageSection() {
       <Header />
       <TypedTitle height={titleHeight} width={titleWidth} lineGap={lineGap} />
       <div
-        className="absolute flex justify-center items-end h-2/3"
+        className="z-10 absolute flex justify-center items-end h-2/3"
         style={{ width: titleWidth }}
       >
         <a
@@ -96,6 +97,7 @@ function ImageSection() {
           View Résumé
         </a>
       </div>
+      <Footer />
     </Div100vh>
   );
 }

@@ -7,7 +7,7 @@ const iconSize = 50;
 
 function Header() {
   return (
-    <header className="absolute flex items-center w-full p-5 drop-shadow-md text-zinc-100">
+    <header className="z-20 absolute flex items-center w-full p-5 drop-shadow-md text-zinc-100">
       <Logo
         width={iconSize}
         height={iconSize}
