@@ -25,6 +25,8 @@ function ImageSection() {
   // lineGap is the gap between the two lines of text in the TypedTitle component
   const [lineGap, setLineGap] = useState("1rem");
 
+  const [buttonHeight, setButtonHeight] = useState("65%");
+
   // useEffect will be used to correctly position the TypedTitle based on the screen size
   useEffect(() => {
     function onResize() {
@@ -77,13 +79,13 @@ function ImageSection() {
         <img
           src={beach_sm}
           alt="Photo of Liam Lawlor on Topsail Beach in Conception Bay South, Newfoundland and Labrador."
-          className="object-cover object-center  w-screen h-screen"
+          className="object-cover object-center w-full h-full"
         />
       </picture>
       <Header />
       <TypedTitle height={titleHeight} width={titleWidth} lineGap={lineGap} />
       <div
-        className="absolute flex justify-center items-end h-2/3 md:h-4/7"
+        className="absolute flex justify-center items-end h-2/3"
         style={{ width: titleWidth }}
       >
         <a

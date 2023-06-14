@@ -54,7 +54,7 @@ function TypedTitle({
 
   return (
     <div
-      className="flex flex-col drop-shadow-md items-center justify-center text-center"
+      className="absolute flex flex-col drop-shadow-md items-center justify-center text-center"
       style={{ height: height, width: width }}
     >
       <span className="font-bold text-3xl md:text-4xl lg:text-5xl 2xl:text-6xl text-scarf-blue">
