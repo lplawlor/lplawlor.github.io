@@ -1,7 +1,7 @@
 {
   "name": "lplawlor-site",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -19,7 +19,6 @@
     "typed.ts": "^2.1.1"
   },
   "devDependencies": {
-    "@iconify/icons-devicon": "^1.2.0",
     "@iconify/react": "^4.1.0",
     "@types/intrinsic-scale": "^3.0.0",
     "@types/node": "^20.2.5",

@@ -26,8 +26,6 @@ function ImageSection() {
   // lineGap is the gap between the two lines of text in the TypedTitle component
   const [lineGap, setLineGap] = useState("1rem");
 
-  const [buttonHeight, setButtonHeight] = useState("65%");
-
   // useEffect will be used to correctly position the TypedTitle based on the screen size
   useEffect(() => {
     function onResize() {
