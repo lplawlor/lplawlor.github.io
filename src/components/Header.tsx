@@ -3,22 +3,22 @@ import linkedinIcon from "@iconify/icons-mdi/linkedin";
 import githubIcon from "@iconify/icons-mdi/github";
 import Logo from "./Logo";
 
-const iconSize = 40;
+const iconSize = 50;
 
 function Header() {
   return (
     <header className="flex items-center w-full p-5 drop-shadow-md text-zinc-100">
-      {/* <Logo
-        width={iconSize}
-        height={iconSize}
-        className="fill-zinc-100 mr-auto"
-      /> */}
       <Logo
         width={iconSize}
         height={iconSize}
-        className="fill-red-800 sm:fill-lime-800 md:fill-blue-800 lg:fill-purple-800 xl:fill-yellow-400 2xl:fill-rose-700 mr-auto"
-      />{" "}
+        className="fill-zinc-100 mr-auto"
+      />
       {/* Color changing logo for device size testing */}
+      {/*<Logo
+        width={iconSize}
+        height={iconSize}
+        className="fill-red-800 sm:fill-lime-800 md:fill-blue-800 lg:fill-purple-800 xl:fill-yellow-400 2xl:fill-rose-700 mr-auto"
+      />*/}
       <a
         href="https://github.com/lplawlor"
         title="GitHub"
