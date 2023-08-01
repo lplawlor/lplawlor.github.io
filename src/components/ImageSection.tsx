@@ -4,7 +4,7 @@ import Div100vh from "react-div-100vh";
 
 import Header from "./Header";
 import TypedTitle from "./TypedTitle";
-import Footer from "./Footer";
+import ScrollIndicator from "./ScrollIndicator";
 
 import beach_sm from "../assets/beach_sm.png";
 //const smW = 1712;
@@ -95,7 +95,9 @@ function ImageSection() {
           View Résumé
         </a>
       </div>
-      <Footer />
+      <div className="absolute flex justify-center drop-shadow-md bottom-0 w-full bg-gradient-to-t from-zinc-900 text-zinc-100">
+        <ScrollIndicator/>
+      </div>
     </Div100vh>
   );
 }

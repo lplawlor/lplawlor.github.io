@@ -11,7 +11,6 @@
     "pretty": "prettier --write \"./**/*.{js,jsx,ts,tsx,json}\""
   },
   "dependencies": {
-    "@iconify/icons-mdi": "^1.2.46",
     "intrinsic-scale": "^3.0.4",
     "react": "^18.2.0",
     "react-div-100vh": "^0.7.0",
@@ -19,6 +18,8 @@
     "typed.ts": "^2.1.1"
   },
   "devDependencies": {
+    "@iconify/icons-icon-park-outline": "^1.2.11",
+    "@iconify/icons-mdi": "^1.2.47",
     "@iconify/react": "^4.1.0",
     "@types/intrinsic-scale": "^3.0.0",
     "@types/node": "^20.2.5",

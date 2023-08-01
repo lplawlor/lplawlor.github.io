@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <footer className="z-20 absolute bottom-0 flex items-center w-full p-2 drop-shadow-md text-xs md:text-sm font-light text-zinc-100 bg-zinc-900 bg-opacity-80">
+    <footer className="z-20 bottom-0 flex items-center w-full p-2 drop-shadow-md text-xs md:text-sm font-light text-zinc-100 bg-zinc-900">
       <div className="text-left">
         <span className="inline-block">Photo by&nbsp;</span>
         <a
