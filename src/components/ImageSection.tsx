@@ -16,7 +16,7 @@ import beach_lg from "../assets/beach_lg.png";
 const lgW = 4902;
 const lgH = 3244;
 
-import resume from "../files/LiamLawlorResume.pdf";
+const RESUME_LINK = "https://rxresu.me/liam.padraic.lawlor/public"
 
 function ImageSection() {
   // titleHeight and titleWidth are the dimensions of the TypedTitle component
@@ -88,7 +88,7 @@ function ImageSection() {
         style={{ width: titleWidth }}
       >
         <a
-          href={resume}
+          href={RESUME_LINK}
           target="_blank"
           className="bg-sea-blue md:bg-scarf-blue text-zinc-100 drop-shadow-md rounded-full p-3 font-semibold text-xl md:text-2xl md:p-4 lg:text-3xl lg:p-5 2xl:text-4xl 2xl:p-6"
         >
