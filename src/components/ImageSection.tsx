@@ -16,7 +16,7 @@ import beach_lg from "../assets/beach_lg.png";
 const lgW = 4902;
 const lgH = 3244;
 
-const RESUME_LINK = "https://rxresu.me/liam.padraic.lawlor/public"
+const RESUME_LINK = "https://rxresu.me/liam.padraic.lawlor/liam-lawlor-resume"
 
 function ImageSection() {
   // titleHeight and titleWidth are the dimensions of the TypedTitle component
