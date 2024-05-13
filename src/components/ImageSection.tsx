@@ -6,13 +6,13 @@ import Header from "./Header";
 import TypedTitle from "./TypedTitle";
 import Footer from "./Footer";
 
-import beach_sm from "../assets/beach_sm.png";
+import beach_sm from "../assets/beach_sm.jpg";
 //const smW = 1712;
 //const smH = 3704;
-import beach_md from "../assets/beach_md.png";
+import beach_md from "../assets/beach_md.jpg";
 const mdW = 4320;
 const mdH = 3240;
-import beach_lg from "../assets/beach_lg.png";
+import beach_lg from "../assets/beach_lg.jpg";
 const lgW = 4902;
 const lgH = 3244;
 
