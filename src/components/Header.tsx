@@ -27,7 +27,7 @@ function Header() {
         <Icon icon={githubIcon} width={iconSize} height={iconSize} />
       </a>
       <a
-        href="https://linkedin.com/in/liamplawlor"
+        href="https://linkedin.com/in/lplawlor"
         title="LinkedIn"
         className="hover:text-zinc-300"
       >
